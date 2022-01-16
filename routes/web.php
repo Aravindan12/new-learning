@@ -14,7 +14,7 @@ use Laravel\Socialite\Facades\Socialite;
 |
 */
 
-Route::get('/', function () {
+Route::get('/livewire', function () {
     return view('welcome');
 });
 
@@ -23,4 +23,6 @@ Route::get('/callback/{provider}', [App\Http\Controllers\GoogleLoginController::
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/show-books', [App\Http\Controllers\HomeController::class, 'ShowBooks'])->name('show-books');
+Route::get('/return-back', [App\Http\Controllers\HomeController::class, 'returnBack'])->name('return-back');
 ?>

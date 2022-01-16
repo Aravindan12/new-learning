@@ -34,4 +34,9 @@ return [
         'client_secret' => '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',
         'redirect' => 'http://127.0.0.1:8000/callback/google',
     ],
+    'stripe' => [
+        'model' => App\Models\Stripe::class,
+        'key' => env('STRIPE_KEY'),
+        'secret' => env('STRIPE_SECRET'),
+      ],
 ];

@@ -7,11 +7,11 @@
             <div class="card">
                 <hr>
 <div class="form-group row mb-0">
-<div class="col-md-8 offset-md-4">
-<a href="{{ url('/auth/redirect/google') }}" class="btn btn-primary"><i class="fa fa-google"></i> Google</a>
+<div class="col-md-8 offset-md-4 text-center">
+<a href="{{ url('/auth/redirect/google') }}" class="btn btn-secondary "><i class="fa fa-google"></i> Login with Google</a>
 </div>
 </div>
-                <div class="card-header">{{ __('Login') }}</div>
+                <div class="card-header text-center">OR</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">

@@ -23,10 +23,20 @@
         <div class="col-md-3">
             <div class="card" style="width: 13rem;">
                 <div class="card-body">
-                  <h5 class="card-title">Chat</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">simple chat</h6>
-                  <p class="card-text">simple chat using socket</p>
-                  <a href="#">Try out!</a>
+                  <h5 class="card-title">LiveWire</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Simple livewire CRUD</h6>
+                  <p class="card-text">Simple livewire CRUD</p>
+                  <a href="/livewire">Try out!</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card" style="width: 13rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Stripe</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Stripe</h6>
+                  <p class="card-text">order through stripe</p>
+                  <a href="/show-books">Try out!</a>
                 </div>
             </div>
         </div>

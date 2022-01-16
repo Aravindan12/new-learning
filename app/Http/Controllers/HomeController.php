@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Models\Book;
 class HomeController extends Controller
 {
     /**
@@ -24,5 +24,14 @@ class HomeController extends Controller
     public function index()
     {
         return view('home');
+    }
+    public function returnBack()
+    {
+        return redirect('/home');
+    }
+    public function ShowBooks()
+    {
+        $books =  Book::all();
+        return view('show-books',compact('books'));
     }
 }
